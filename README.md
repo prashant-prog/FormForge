@@ -62,13 +62,3 @@ npm run dev
 3. **Public Form** (`/form/:id`): The live form to share with users where responses are collected.
 4. **Responses Viewer** (`/responses/:id`): View submissions in a tabular format and **Export to CSV**.
 
-## Instructions to Export Screenshots for PDF Submission
-1. Start the React server on your machine (`npm run dev`)
-2. Open your browser and navigate to `http://localhost:3000`
-3. Use your OS snapshot tool (e.g., `Snipping Tool` on Windows, `Cmd+Shift+4` on Mac, `PrtSc` on Linux).
-4. Take screenshots of:
-   - Dashboard page showing the seeded form.
-   - Form Builder showing the extensive UI and field options.
-   - Public Form showing the clean participant view.
-   - Responses UI showing tabular data and CSV export button.
-5. Combine these screenshots into a PDF using MS Word or Google Docs, and explain the stack choices.

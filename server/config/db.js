@@ -9,6 +9,7 @@ const connectDB = async () => {
     console.log(`Failed to connect to local MongoDB (${error.message}).`);
     console.log('Falling back to in-memory MongoDB (mongodb-memory-server)...');
     try {
+      await mongoose.disconnect(); // Clear the failed connection attempt to prevent queue hanging
       const mongoServer = await MongoMemoryServer.create();
       const mongoUri = mongoServer.getUri();
       const conn = await mongoose.connect(mongoUri);
